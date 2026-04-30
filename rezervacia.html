@@ -34,7 +34,7 @@
 </header>
 
 <main>
-    <section class="reservation-hero bg-light">
+    <section class="reservation-hero img-hero-rezervacia">
         <div class="container">
             <div class="reservation-hero-text">
                 <h1>Rezervácia</h1>
@@ -51,7 +51,7 @@
 
                 <form id="main-reservation-form" class="full-reservation-form" novalidate>
                     <div class="form-group-full">
-                        <label>Výber vozidla *</label>
+                        <label for="car-select">Výber vozidla *</label>
                         <select id="car-select" required>
                             <option value="" disabled selected>Vyberte si vozidlo z našej kolekcie...</option>
                             <option value="american">Dodge Charger R/T (1968)</option>
@@ -86,12 +86,12 @@
 
                     <div class="form-row">
                         <div class="form-group-half">
-                            <label>Dátum prevzatia vozidla *</label>
+                            <label for="date-from">Dátum prevzatia vozidla *</label>
                             <input type="date" id="date-from" required>
                             <span class="error-msg" id="error-date-from">Vyberte dátum prevzatia.</span>
                         </div>
                         <div class="form-group-half">
-                            <label>Dátum odovzdania vozidla *</label>
+                            <label for="date-to">Dátum odovzdania vozidla *</label>
                             <input type="date" id="date-to" required>
                             <span class="error-msg" id="error-date-to">Vyberte dátum odovzdania.</span>
                         </div>
@@ -120,12 +120,12 @@
 
                     <div class="form-row">
                         <div class="form-group-half">
-                            <label>Meno *</label>
+                            <label for="res-name">Meno *</label>
                             <input type="text" id="res-name" placeholder="Vaše meno" required>
                             <span class="error-msg" id="error-name">Toto pole je povinné.</span>
                         </div>
                         <div class="form-group-half">
-                            <label>Priezvisko *</label>
+                            <label for="res-surname">Priezvisko *</label>
                             <input type="text" id="res-surname" placeholder="Vaše priezvisko" required>
                             <span class="error-msg" id="error-surname">Toto pole je povinné.</span>
                         </div>
@@ -133,23 +133,23 @@
 
                     <div class="form-row">
                         <div class="form-group-half">
-                            <label>Emailová adresa *</label>
+                            <label for="res-email">Emailová adresa *</label>
                             <input type="email" id="res-email" placeholder="vas@email.sk" required>
                             <span class="error-msg" id="error-email">Zadajte platný email.</span>
                         </div>
                         <div class="form-group-half">
-                            <label>Telefónne číslo</label>
+                            <label for="res-phone">Telefónne číslo</label>
                             <input type="tel" id="res-phone" placeholder="+421 900 000 000">
                         </div>
                     </div>
 
                     <div class="form-group-full">
-                        <label>Poznámka</label>
+                        <label for="res-note">Poznámka</label>
                         <textarea id="res-note" rows="4" placeholder="Vaša správa, špeciálne požiadavky..."></textarea>
                     </div>
 
                     <div class="form-group-full terms-group">
-                        <label class="checkbox-label">
+                        <label class="checkbox-label" for="res-terms">
                             <input type="checkbox" id="res-terms" required>
                             <span class="checkbox-custom"></span>
                             Bol som oboznámený s podmienkami prenájmu a súhlasím so spracovaním osobných údajov. *

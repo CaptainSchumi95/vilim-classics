@@ -459,49 +459,47 @@ h1, h2, h3, h4, h5 {
 }
 
 .reservation-hero {
-    padding: 100px 0 60px 0;
-    text-align: center;
+    padding: 180px 0;
+    text-align: left;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Gradient vrstva pre lepšiu čitateľnosť bieleho textu na fotke */
+.reservation-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 100%);
+    z-index: 1;
+}
+
+.reservation-hero .container {
+    position: relative;
+    z-index: 2;
 }
 
 .reservation-hero-text {
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 600px;
+    margin: 0;
 }
 
 .reservation-hero-text h1 {
     font-size: 84px;
     font-style: italic;
-    color: var(--color-dark);
+    color: var(--color-bg-light) !important;
     margin-bottom: 30px;
+    line-height: 1;
 }
 
 .reservation-hero-text p {
     font-size: 18px;
-    color: var(--color-dark);
+    color: var(--color-bg-light) !important;
 }
 
-.reservation-form-section {
-    padding: 80px 0 120px 0;
-}
-
-.reservation-form-container {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.reservation-form-container h2 {
-    font-size: 56px;
-    font-style: italic;
-    color: var(--color-dark);
-    margin-bottom: 20px;
-    line-height: 1.1;
-}
-
-.reservation-form-container .subtitle {
-    font-size: 16px;
-    margin-bottom: 60px;
-    max-width: 700px;
-}
+/* Pridaj toto úplne na spodok súboru medzi ostatné obrázky */
+.img-hero-rezervacia { background-image: url('../images/13.png'); }
 
 .full-reservation-form {
     display: flex;
