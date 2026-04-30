@@ -675,3 +675,14 @@ h1, h2, h3, h4, h5 {
 .img-hero-kontakt {
     background-image: url('../images/14.png');
 }
+
+
+.bg-dark-beige {
+    background-color: var(--color-input);
+}
+
+.img-hero-sluzby { background-image: url('../images/10.png'); }
+.img-srv-1 { background-image: url('../images/11.png'); }
+.img-srv-2 { background-image: url('../images/12.png'); }
+.img-srv-3 { background-image: url('../images/13.png'); }
+.img-srv-4 { background-image: url('../images/9.JPG'); }
