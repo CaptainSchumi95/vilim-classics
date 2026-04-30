@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilim Classics | Galéria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="main-header">
+    <div class="container header-container">
+        <nav class="main-nav nav-left">
+            <ul>
+                <li><a href="index.html">ÚVOD</a></li>
+                <li><a href="kolekcie.html">KOLEKCIE</a></li>
+                <li><a href="pribeh.html">PRÍBEH</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <span class="logo-vilim">Vilim</span> <span class="logo-classics">Classics</span>
+        </div>
+        <nav class="main-nav nav-right">
+            <ul>
+                <li><a href="sluzby.html">SLUŽBY</a></li>
+                <li><a href="rezervacia.html">REZERVÁCIA</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="split-section bg-dark text-light">
+        <div class="split-half hero-text">
+            <div class="hero-text-content">
+                <div class="collection-logo-placeholder collection-logo-dark">
+                    Vilim Classics<br>Kompletná<br>GALÉRIA
+                </div>
+                <p>Prezrite si našu flotilu do najmenšieho detailu. Od dokonalých línii britskej elegancie až po surovú silu amerických svalov. Každé vozidlo je umeleckým dielom pripraveným na vašu udalosť.</p>
+            </div>
+        </div>
+        <div class="split-half hero-image img-hero-kolekcie"></div>
+    </section>
+
+    <section class="gallery-section bg-beige">
+        <div class="container">
+            <h2 class="section-title text-dark">Kompletná Galéria</h2>
+
+            <div class="gallery-grid">
+                <a href="images/1.png" data-fancybox="gallery" class="gallery-item">
+                    <div class="gallery-img" style="background-image: url('images/1.png');"></div>
+                </a>
+                <a href="images/2.png" data-fancybox="gallery" class="gallery-item">
+                    <div class="gallery-img" style="background-image: url('images/2.png');"></div>
+                </a>
+                <a href="images/3.png" data-fancybox="gallery" class="gallery-item">
+                    <div class="gallery-img" style="background-image: url('images/3.png');"></div>
+                </a>
+                <a href="images/4.png" data-fancybox="gallery" class="gallery-item">
+                    <div class="gallery-img" style="background-image: url('images/4.png');"></div>
+                </a>
+                <a href="images/5.png" data-fancybox="gallery" class="gallery-item">
+                    <div class="gallery-img" style="background-image: url('images/5.png');"></div>
+                </a>
+                <a href="images/6.png" data-fancybox="gallery" class="gallery-item">
+                    <div class="gallery-img" style="background-image: url('images/6.png');"></div>
+                </a>
+                <a href="images/7.png" data-fancybox="gallery" class="gallery-item">
+                    <div class="gallery-img" style="background-image: url('images/7.png');"></div>
+                </a>
+                <a href="images/8.png" data-fancybox="gallery" class="gallery-item">
+                    <div class="gallery-img" style="background-image: url('images/8.png');"></div>
+                </a>
+                <a href="images/10.png" data-fancybox="gallery" class="gallery-item">
+                    <div class="gallery-img" style="background-image: url('images/10.png');"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="main-footer">
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 VILIM CLASSICS. UNIVERZITNÝ PROJEKT.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+    Fancybox.bind('[data-fancybox="gallery"]', {
+    });
+</script>
+</body>
+</html>
