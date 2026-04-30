@@ -453,3 +453,213 @@ h1, h2, h3, h4, h5 {
 .gallery-item:hover .gallery-img {
     transform: scale(1.05);
 }
+
+.reservation-hero {
+    padding: 100px 0 60px 0;
+    text-align: center;
+}
+
+.reservation-hero-text {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.reservation-hero-text h1 {
+    font-size: 84px;
+    font-style: italic;
+    color: var(--color-dark);
+    margin-bottom: 30px;
+}
+
+.reservation-hero-text p {
+    font-size: 18px;
+    color: var(--color-dark);
+}
+
+.reservation-form-section {
+    padding: 80px 0 120px 0;
+}
+
+.reservation-form-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.reservation-form-container h2 {
+    font-size: 56px;
+    font-style: italic;
+    color: var(--color-dark);
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.reservation-form-container .subtitle {
+    font-size: 16px;
+    margin-bottom: 60px;
+    max-width: 700px;
+}
+
+.full-reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-group-full {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-half {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.full-reservation-form label {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--color-dark);
+}
+
+.full-reservation-form input[type="text"],
+.full-reservation-form input[type="email"],
+.full-reservation-form input[type="tel"],
+.full-reservation-form input[type="date"],
+.full-reservation-form select,
+.full-reservation-form textarea {
+    padding: 18px 20px;
+    border: none;
+    background-color: var(--color-input);
+    font-family: var(--font-primary), sans-serif;
+    font-size: 15px;
+    color: var(--color-dark);
+    width: 100%;
+}
+
+.full-reservation-form input:focus,
+.full-reservation-form select:focus,
+.full-reservation-form textarea:focus {
+    outline: 2px solid var(--color-dark);
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.radio-label,
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0 !important;
+}
+
+.radio-label input,
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-input);
+    border-radius: 50%;
+}
+
+.radio-label input:checked ~ .radio-custom {
+    background-color: var(--color-dark);
+}
+
+.radio-custom:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-label input:checked ~ .radio-custom:after {
+    display: block;
+}
+
+.radio-label .radio-custom:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-bg-light);
+}
+
+.checkbox-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-input);
+}
+
+.checkbox-label input:checked ~ .checkbox-custom {
+    background-color: var(--color-dark);
+}
+
+.checkbox-custom:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom:after {
+    display: block;
+}
+
+.checkbox-label .checkbox-custom:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--color-bg-light);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.terms-group {
+    margin-top: 10px;
+}
+
+.btn-large {
+    align-self: flex-start;
+    padding: 20px 50px;
+    margin-top: 20px;
+}
+
+.error-msg {
+    color: #b84040;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 8px;
+    display: none;
+}
+
+.success-message {
+    background-color: #4a7ab5;
+    color: var(--color-bg-light);
+    padding: 20px;
+    font-weight: 700;
+    text-align: center;
+    display: none;
+}
