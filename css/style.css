@@ -265,20 +265,15 @@ section {
 }
 
 .main-footer {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-dark-top {
     background-color: var(--color-dark);
     color: var(--color-bg-light);
-    padding: 80px 0 60px;
+    padding: 80px 0 0 0;
 }
 
 .footer-title {
     text-align: center;
-    font-size: 48px;
-    margin-bottom: 60px;
+    font-size: 64px;
+    margin-bottom: 50px;
     font-style: italic;
     color: var(--color-bg-light);
 }
@@ -287,30 +282,26 @@ section {
     display: flex;
     justify-content: space-between;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
 }
 
 .info-block h5 {
     color: var(--color-bg-light);
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 10px;
     font-style: italic;
 }
 
-.footer-light-form {
-    background-color: var(--color-bg-light);
-    padding: 60px 0;
-}
-
 .footer-form-wrapper {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 80px;
     background-color: var(--color-bg-light);
     color: var(--color-dark);
+    padding: 60px;
 }
 
 .footer-form-wrapper h3 {
-    font-size: 36px;
+    font-size: 48px;
     margin-bottom: 40px;
     font-style: italic;
     color: var(--color-dark);
@@ -335,7 +326,7 @@ section {
 .contact-form textarea {
     padding: 15px 20px;
     border: none;
-    background-color: var(--color-bg-beige);
+    background-color: #d8c9b6;
     font-family: var(--font-primary), sans-serif;
     font-size: 16px;
     color: var(--color-dark);
