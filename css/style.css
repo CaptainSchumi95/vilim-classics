@@ -459,21 +459,26 @@ h1, h2, h3, h4, h5 {
 }
 
 
+/* =========================================
+   Rezervácia
+   ========================================= */
+/* Hero sekcia: Text biely na fotke zarovnaný doľava */
 .reservation-hero {
     min-height: 60vh;
     display: flex;
     align-items: center;
     text-align: left;
     background-size: cover;
-    background-position: center 25%
+    background-position: center 25%; /* Posunie fotku tak, aby tváre boli nižšie pod textom */
     position: relative;
 }
 
+/* Gradient vrstva pre lepšiu čitateľnosť bieleho textu na fotke */
 .reservation-hero::before {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 80%);
+    background: linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 100%);
     z-index: 1;
 }
 
@@ -494,7 +499,7 @@ h1, h2, h3, h4, h5 {
     color: var(--color-bg-light) !important;
     margin-bottom: 20px;
     line-height: 1;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); /* Pridá tieň pre lepšiu čitateľnosť */
 }
 
 .reservation-hero-text p {
@@ -503,6 +508,7 @@ h1, h2, h3, h4, h5 {
     text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
+/* Zabezpečí, že formulár nie je nalepený na fotku */
 .reservation-form-section {
     padding: 100px 0 120px 0;
 }
@@ -598,7 +604,9 @@ h1, h2, h3, h4, h5 {
     cursor: pointer;
 }
 
-.radio-custom, .checkbox-custom {
+/* Vlastné začiarkavacie políčka, ktoré lícujú s textom */
+.radio-custom,
+.checkbox-custom {
     position: absolute;
     top: 50%;
     left: 0;
@@ -618,7 +626,8 @@ h1, h2, h3, h4, h5 {
     background-color: var(--color-dark);
 }
 
-.radio-custom:after, .checkbox-custom:after {
+.radio-custom:after,
+.checkbox-custom:after {
     content: "";
     position: absolute;
     display: none;
@@ -630,15 +639,19 @@ h1, h2, h3, h4, h5 {
 }
 
 .radio-label .radio-custom:after {
-    top: 5px; left: 5px;
-    width: 8px; height: 8px;
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: var(--color-bg-light);
 }
 
 .checkbox-label .checkbox-custom:after {
-    left: 6px; top: 2px;
-    width: 5px; height: 10px;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
     border: solid var(--color-bg-light);
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
