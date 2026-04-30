@@ -81,6 +81,7 @@ h1, h2, h3, h4, h5 {
 .main-header {
     background-color: var(--color-bg-light);
     padding: 20px 0;
+    border-bottom: 3px solid var(--color-accent);
 }
 
 .header-container {
@@ -91,10 +92,19 @@ h1, h2, h3, h4, h5 {
 
 .logo {
     font-family: var(--font-secondary), serif;
-    font-size: 28px;
+    font-size: 38px;
     font-weight: 700;
     font-style: italic;
+    display: flex;
+    gap: 8px;
+}
+
+.logo-vilim {
     color: var(--color-accent);
+}
+
+.logo-classics {
+    color: var(--color-dark);
 }
 
 .main-nav ul {
@@ -107,8 +117,8 @@ h1, h2, h3, h4, h5 {
     text-decoration: none;
     color: var(--color-dark);
     font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
 }
 
 section {
@@ -209,6 +219,7 @@ section {
     font-size: 48px;
     margin-bottom: 30px;
     font-style: italic;
+    color: var(--color-bg-light);
 }
 
 .story-text-box p {
@@ -224,6 +235,7 @@ section {
     font-size: 42px;
     margin-bottom: 60px;
     font-style: italic;
+    color: var(--color-dark);
 }
 
 .services-grid {
@@ -253,9 +265,14 @@ section {
 }
 
 .main-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-dark-top {
     background-color: var(--color-dark);
     color: var(--color-bg-light);
-    padding: 80px 0 20px;
+    padding: 80px 0 60px;
 }
 
 .footer-title {
@@ -263,12 +280,14 @@ section {
     font-size: 48px;
     margin-bottom: 60px;
     font-style: italic;
+    color: var(--color-bg-light);
 }
 
 .footer-info {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 60px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .info-block h5 {
@@ -278,17 +297,23 @@ section {
     font-style: italic;
 }
 
+.footer-light-form {
+    background-color: var(--color-bg-light);
+    padding: 60px 0;
+}
+
 .footer-form-wrapper {
-    background-color: var(--color-bg-beige);
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--color-bg-light);
     color: var(--color-dark);
-    padding: 60px;
-    margin-bottom: 60px;
 }
 
 .footer-form-wrapper h3 {
     font-size: 36px;
     margin-bottom: 40px;
     font-style: italic;
+    color: var(--color-dark);
 }
 
 .contact-form {
@@ -308,11 +333,12 @@ section {
 
 .contact-form input,
 .contact-form textarea {
-    padding: 15px;
+    padding: 15px 20px;
     border: none;
-    background-color: #d1c0a8;
+    background-color: var(--color-bg-beige);
     font-family: var(--font-primary), sans-serif;
     font-size: 16px;
+    color: var(--color-dark);
 }
 
 .contact-form .btn-dark {
@@ -320,8 +346,17 @@ section {
     padding: 15px 40px;
 }
 
-.copyright {
+.footer-copyright {
+    background-color: var(--color-bg-light);
     text-align: center;
-    font-size: 12px;
-    letter-spacing: 1px;
+    padding: 20px 0;
+    border-top: 3px solid var(--color-accent);
+}
+
+.copyright-text {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--color-dark);
 }
