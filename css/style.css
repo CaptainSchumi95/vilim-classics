@@ -329,7 +329,8 @@ h1, h2, h3, h4, h5 {
 .footer-info {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+    max-width: 900px;
+    margin: 0 auto 80px auto;
 }
 
 .info-block h5 {
