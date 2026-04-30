@@ -458,11 +458,14 @@ h1, h2, h3, h4, h5 {
     transform: scale(1.05);
 }
 
+
 .reservation-hero {
-    padding: 180px 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
     text-align: left;
     background-size: cover;
-    background-position: center;
+    background-position: center 25%
     position: relative;
 }
 
@@ -470,13 +473,14 @@ h1, h2, h3, h4, h5 {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 80%);
     z-index: 1;
 }
 
 .reservation-hero .container {
     position: relative;
     z-index: 2;
+    width: 100%;
 }
 
 .reservation-hero-text {
@@ -488,15 +492,39 @@ h1, h2, h3, h4, h5 {
     font-size: 84px;
     font-style: italic;
     color: var(--color-bg-light) !important;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     line-height: 1;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
 .reservation-hero-text p {
     font-size: 18px;
     color: var(--color-bg-light) !important;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
+.reservation-form-section {
+    padding: 100px 0 120px 0;
+}
+
+.reservation-form-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.reservation-form-container h2 {
+    font-size: 56px;
+    font-style: italic;
+    color: var(--color-dark);
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.reservation-form-container .subtitle {
+    font-size: 16px;
+    margin-bottom: 60px;
+    max-width: 700px;
+}
 
 .full-reservation-form {
     display: flex;
@@ -559,7 +587,7 @@ h1, h2, h3, h4, h5 {
     font-weight: 600 !important;
     font-size: 15px !important;
     position: relative;
-    padding-left: 30px;
+    padding-left: 35px;
     margin-bottom: 0 !important;
 }
 
@@ -570,67 +598,47 @@ h1, h2, h3, h4, h5 {
     cursor: pointer;
 }
 
+.radio-custom, .checkbox-custom {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 22px;
+    width: 22px;
+    background-color: var(--color-bg-light);
+    border: 2px solid var(--color-dark);
+}
+
 .radio-custom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: var(--color-input);
     border-radius: 50%;
 }
 
-.radio-label input:checked ~ .radio-custom {
-    background-color: var(--color-dark);
-}
-
-.radio-custom:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.radio-label input:checked ~ .radio-custom:after {
-    display: block;
-}
-
-.radio-label .radio-custom:after {
-    top: 6px;
-    left: 6px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--color-bg-light);
-}
-
-.checkbox-custom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: var(--color-input);
-}
-
+.radio-label input:checked ~ .radio-custom,
 .checkbox-label input:checked ~ .checkbox-custom {
     background-color: var(--color-dark);
 }
 
-.checkbox-custom:after {
+.radio-custom:after, .checkbox-custom:after {
     content: "";
     position: absolute;
     display: none;
 }
 
+.radio-label input:checked ~ .radio-custom:after,
 .checkbox-label input:checked ~ .checkbox-custom:after {
     display: block;
 }
 
+.radio-label .radio-custom:after {
+    top: 5px; left: 5px;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--color-bg-light);
+}
+
 .checkbox-label .checkbox-custom:after {
-    left: 7px;
-    top: 3px;
-    width: 5px;
-    height: 10px;
+    left: 6px; top: 2px;
+    width: 5px; height: 10px;
     border: solid var(--color-bg-light);
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
