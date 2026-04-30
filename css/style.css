@@ -663,3 +663,14 @@ h1, h2, h3, h4, h5 {
     text-align: center;
     display: none;
 }
+
+.hero-full-image {
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-hero-kontakt {
+    background-image: url('../images/14.png');
+}
