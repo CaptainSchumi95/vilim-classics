@@ -9,10 +9,12 @@
     --color-bg-beige: #eddec9;
     --color-dark: #170d0d;
     --color-accent: #6d2424;
+    --font-primary: 'Syne', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-primary);
     background-color: var(--color-bg-light);
     color: var(--color-dark);
     line-height: 1.6;
@@ -25,7 +27,9 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
+    font-family: var(--font-secondary);
     margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .text-center {
@@ -36,11 +40,13 @@ h1, h2, h3, h4, h5 {
     display: inline-block;
     padding: 12px 30px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
     text-align: center;
+    font-family: var(--font-primary);
+    letter-spacing: 1px;
 }
 
 .btn-primary {
@@ -84,8 +90,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-family: var(--font-secondary);
+    font-size: 28px;
+    font-weight: 700;
+    font-style: italic;
     color: var(--color-accent);
 }
 
@@ -99,6 +107,8 @@ h1, h2, h3, h4, h5 {
     text-decoration: none;
     color: var(--color-dark);
     font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 section {
@@ -124,7 +134,8 @@ section {
     font-size: 64px;
     line-height: 1.1;
     margin-bottom: 30px;
-    color: var(--color-accent);
+    color: var(--color-dark);
+    font-style: italic;
 }
 
 .hero-image-placeholder {
@@ -159,10 +170,12 @@ section {
     font-size: 42px;
     line-height: 1.2;
     margin-bottom: 30px;
+    font-style: italic;
 }
 
 .collection-text-box p {
     margin-bottom: 40px;
+    font-size: 16px;
 }
 
 .story-section {
@@ -195,6 +208,7 @@ section {
 .story-text-box h2 {
     font-size: 48px;
     margin-bottom: 30px;
+    font-style: italic;
 }
 
 .story-text-box p {
@@ -209,6 +223,7 @@ section {
 .services-section h2 {
     font-size: 42px;
     margin-bottom: 60px;
+    font-style: italic;
 }
 
 .services-grid {
@@ -232,6 +247,9 @@ section {
 
 .service-card h4 {
     margin-bottom: 15px;
+    font-family: var(--font-primary);
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .main-footer {
@@ -244,6 +262,7 @@ section {
     text-align: center;
     font-size: 48px;
     margin-bottom: 60px;
+    font-style: italic;
 }
 
 .footer-info {
@@ -254,8 +273,9 @@ section {
 
 .info-block h5 {
     color: var(--color-bg-light);
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 10px;
+    font-style: italic;
 }
 
 .footer-form-wrapper {
@@ -268,6 +288,7 @@ section {
 .footer-form-wrapper h3 {
     font-size: 36px;
     margin-bottom: 40px;
+    font-style: italic;
 }
 
 .contact-form {
@@ -290,7 +311,8 @@ section {
     padding: 15px;
     border: none;
     background-color: #d1c0a8;
-    font-family: Arial, sans-serif;
+    font-family: var(--font-primary);
+    font-size: 16px;
 }
 
 .contact-form .btn-dark {
@@ -301,4 +323,5 @@ section {
 .copyright {
     text-align: center;
     font-size: 12px;
+    letter-spacing: 1px;
 }
