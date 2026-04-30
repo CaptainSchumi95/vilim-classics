@@ -32,11 +32,14 @@ h1, h2, h3, h4, h5 {
     font-weight: 700;
 }
 
-.bg-light { background-color: var(--color-bg-light); }
-.bg-dark { background-color: var(--color-dark); }
-.bg-accent { background-color: var(--color-accent); }
-.text-light { color: var(--color-bg-light); }
-.text-dark { color: var(--color-dark); }
+.bg-light { background-color: var(--color-bg-light) !important; }
+.bg-dark { background-color: var(--color-dark) !important; }
+.bg-accent { background-color: var(--color-accent) !important; }
+.bg-beige { background-color: var(--color-bg-beige) !important; }
+.bg-dark-beige { background-color: var(--color-input) !important; }
+
+.text-light { color: var(--color-bg-light) !important; }
+.text-dark { color: var(--color-dark) !important; }
 
 .btn {
     display: inline-block;
