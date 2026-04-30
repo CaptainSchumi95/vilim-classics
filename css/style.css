@@ -466,7 +466,6 @@ h1, h2, h3, h4, h5 {
     position: relative;
 }
 
-/* Gradient vrstva pre lepšiu čitateľnosť bieleho textu na fotke */
 .reservation-hero::before {
     content: '';
     position: absolute;
@@ -498,8 +497,6 @@ h1, h2, h3, h4, h5 {
     color: var(--color-bg-light) !important;
 }
 
-/* Pridaj toto úplne na spodok súboru medzi ostatné obrázky */
-.img-hero-rezervacia { background-image: url('../images/13.png'); }
 
 .full-reservation-form {
     display: flex;
@@ -687,3 +684,4 @@ h1, h2, h3, h4, h5 {
 .img-srv-2 { background-image: url('../images/12.png'); }
 .img-srv-3 { background-image: url('../images/13.png'); }
 .img-srv-4 { background-image: url('../images/9.JPG'); }
+.img-hero-rezervacia { background-image: url('../images/13.png'); }
