@@ -1,6 +1,110 @@
 {
   "kolekcie": [
     {
+      "nazov": "Cars of Michal Drobný",
+      "auta": [
+        {
+          "znacka": "McLaren",
+          "model": "MP4-20 (Kimi Räikkönen)",
+          "rok": 2005,
+          "parametre": {
+            "motor": "3.0L Mercedes-Benz FO 110R V10",
+            "vykon": "930 koní"
+          }
+        },
+        {
+          "znacka": "McLaren",
+          "model": "F1",
+          "rok": 1994,
+          "parametre": {
+            "motor": "6.1L BMW S70/2 V12",
+            "vykon": "627 koní"
+          }
+        },
+        {
+          "znacka": "Ferrari",
+          "model": "F40",
+          "rok": 1987,
+          "parametre": {
+            "motor": "2.9L Tipo F120A Twin-Turbo V8",
+            "vykon": "478 koní"
+          }
+        },
+        {
+          "znacka": "Porsche",
+          "model": "Carrera GT",
+          "rok": 2003,
+          "parametre": {
+            "motor": "5.7L M80/01 V10",
+            "vykon": "612 koní"
+          }
+        },
+        {
+          "znacka": "Mercedes-Benz",
+          "model": "300 SL Gullwing",
+          "rok": 1954,
+          "parametre": {
+            "motor": "3.0L M198 Inline-6",
+            "vykon": "215 koní"
+          }
+        },
+        {
+          "znacka": "McLaren",
+          "model": "MP4/4 (Ayrton Senna)",
+          "rok": 1988,
+          "parametre": {
+            "motor": "1.5L Honda RA168E Turbo V6",
+            "vykon": "650+ koní"
+          }
+        },
+        {
+          "znacka": "Lamborghini",
+          "model": "Miura P400 SV",
+          "rok": 1971,
+          "parametre": {
+            "motor": "3.9L Bizzarrini V12",
+            "vykon": "385 koní"
+          }
+        },
+        {
+          "znacka": "Bugatti",
+          "model": "Type 57SC Atlantic",
+          "rok": 1936,
+          "parametre": {
+            "motor": "3.3L Supercharged Inline-8",
+            "vykon": "200 koní"
+          }
+        },
+        {
+          "znacka": "Lancia",
+          "model": "Stratos HF Stradale",
+          "rok": 1974,
+          "parametre": {
+            "motor": "2.4L Ferrari Dino V6",
+            "vykon": "190 koní"
+          }
+        },
+        {
+          "znacka": "Pagani",
+          "model": "Zonda F",
+          "rok": 2005,
+          "parametre": {
+            "motor": "7.3L Mercedes-AMG V12",
+            "vykon": "602 koní"
+          }
+        },
+        {
+          "znacka": "Lexus",
+          "model": "LFA",
+          "rok": 2010,
+          "parametre": {
+            "motor": "4.8L 1LR-GUE V10",
+            "vykon": "560 koní"
+          }
+        }
+      ]
+    },
+    {
       "nazov": "American Muscle",
       "auta": [
         {
@@ -8,8 +112,8 @@
           "model": "Charger R/T",
           "rok": 1968,
           "parametre": {
-            "vykon": "425 koní",
-            "motor": "426 Hemi V8"
+            "motor": "426 Hemi V8",
+            "vykon": "425 koní"
           }
         },
         {
@@ -17,8 +121,80 @@
           "model": "Mustang Shelby GT500",
           "rok": 1967,
           "parametre": {
-            "vykon": "355 koní",
-            "motor": "428 Cobra Jet V8"
+            "motor": "428 Cobra Jet V8",
+            "vykon": "355 koní"
+          }
+        },
+        {
+          "znacka": "Chevrolet",
+          "model": "Chevelle SS 454",
+          "rok": 1970,
+          "parametre": {
+            "motor": "454 LS6 V8",
+            "vykon": "450 koní"
+          }
+        },
+        {
+          "znacka": "Plymouth",
+          "model": "Hemi 'Cuda",
+          "rok": 1970,
+          "parametre": {
+            "motor": "426 Hemi V8",
+            "vykon": "425 koní"
+          }
+        },
+        {
+          "znacka": "Pontiac",
+          "model": "GTO The Judge",
+          "rok": 1969,
+          "parametre": {
+            "motor": "400 Ram Air IV V8",
+            "vykon": "370 koní"
+          }
+        },
+        {
+          "znacka": "Chevrolet",
+          "model": "Camaro Z/28",
+          "rok": 1969,
+          "parametre": {
+            "motor": "302 V8",
+            "vykon": "290 koní"
+          }
+        },
+        {
+          "znacka": "Dodge",
+          "model": "Challenger R/T",
+          "rok": 1970,
+          "parametre": {
+            "motor": "440 Six Pack V8",
+            "vykon": "390 koní"
+          }
+        },
+        {
+          "znacka": "Shelby",
+          "model": "Cobra 427 Super Snake",
+          "rok": 1966,
+          "parametre": {
+            "motor": "427 Side Oiler V8",
+            "vykon": "800 koní"
+          }
+        },
+        {
+          "znacka": "AMC",
+          "model": "AMX",
+          "rok": 1969,
+          "parametre": {
+            "motor": "390 V8",
+            "vykon": "315 koní"
+          }
+        },
+        {
+          "znacka": "Buick",
+          "model": "GSX Stage 1",
+          "rok": 1970,
+          "parametre": {
+            "motor": "455 V8",
+            "vykon": "360 koní"
           }
         }
       ]
@@ -31,8 +207,184 @@
           "model": "330 P4",
           "rok": 1967,
           "parametre": {
-            "vykon": "450 koní",
-            "motor": "4.0L V12"
+            "motor": "4.0L V12",
+            "vykon": "450 koní"
+          }
+        },
+        {
+          "znacka": "Ferrari",
+          "model": "250 GTO",
+          "rok": 1962,
+          "parametre": {
+            "motor": "3.0L Colombo V12",
+            "vykon": "300 koní"
+          }
+        },
+        {
+          "znacka": "Ferrari",
+          "model": "Enzo",
+          "rok": 2002,
+          "parametre": {
+            "motor": "6.0L Tipo F140 B V12",
+            "vykon": "660 koní"
+          }
+        },
+        {
+          "znacka": "Ferrari",
+          "model": "Testarossa",
+          "rok": 1984,
+          "parametre": {
+            "motor": "4.9L Tipo F113 Flat-12",
+            "vykon": "390 koní"
+          }
+        },
+        {
+          "znacka": "Ferrari",
+          "model": "LaFerrari",
+          "rok": 2013,
+          "parametre": {
+            "motor": "6.3L V12 + KERS",
+            "vykon": "963 koní"
+          }
+        },
+        {
+          "znacka": "Ferrari",
+          "model": "288 GTO",
+          "rok": 1984,
+          "parametre": {
+            "motor": "2.9L Twin-Turbo V8",
+            "vykon": "400 koní"
+          }
+        },
+        {
+          "znacka": "Ferrari",
+          "model": "275 GTB/4",
+          "rok": 1966,
+          "parametre": {
+            "motor": "3.3L Colombo V12",
+            "vykon": "300 koní"
+          }
+        },
+        {
+          "znacka": "Ferrari",
+          "model": "458 Speciale",
+          "rok": 2013,
+          "parametre": {
+            "motor": "4.5L V8",
+            "vykon": "605 koní"
+          }
+        },
+        {
+          "znacka": "Ferrari",
+          "model": "F355 Berlinetta",
+          "rok": 1994,
+          "parametre": {
+            "motor": "3.5L 5-valve V8",
+            "vykon": "380 koní"
+          }
+        },
+        {
+          "znacka": "Ferrari",
+          "model": "812 Superfast",
+          "rok": 2017,
+          "parametre": {
+            "motor": "6.5L V12",
+            "vykon": "800 koní"
+          }
+        }
+      ]
+    },
+    {
+      "nazov": "British Racing Green",
+      "auta": [
+        {
+          "znacka": "Aston Martin",
+          "model": "V8 Vantage",
+          "rok": 1977,
+          "parametre": {
+            "motor": "5.3L V8",
+            "vykon": "390 koní"
+          }
+        },
+        {
+          "znacka": "Aston Martin",
+          "model": "DB5",
+          "rok": 1964,
+          "parametre": {
+            "motor": "4.0L Inline-6",
+            "vykon": "282 koní"
+          }
+        },
+        {
+          "znacka": "Jaguar",
+          "model": "E-Type Series 1",
+          "rok": 1961,
+          "parametre": {
+            "motor": "3.8L Inline-6",
+            "vykon": "265 koní"
+          }
+        },
+        {
+          "znacka": "Bentley",
+          "model": "4½ Litre 'Blower'",
+          "rok": 1929,
+          "parametre": {
+            "motor": "4.4L Supercharged Inline-4",
+            "vykon": "175 koní"
+          }
+        },
+        {
+          "znacka": "Lotus",
+          "model": "Esprit S1",
+          "rok": 1976,
+          "parametre": {
+            "motor": "2.0L Inline-4",
+            "vykon": "160 koní"
+          }
+        },
+        {
+          "znacka": "Jaguar",
+          "model": "D-Type",
+          "rok": 1955,
+          "parametre": {
+            "motor": "3.4L XK Inline-6",
+            "vykon": "250 koní"
+          }
+        },
+        {
+          "znacka": "Austin-Healey",
+          "model": "3000 MkIII",
+          "rok": 1967,
+          "parametre": {
+            "motor": "2.9L Inline-6",
+            "vykon": "150 koní"
+          }
+        },
+        {
+          "znacka": "Mini",
+          "model": "Cooper S",
+          "rok": 1964,
+          "parametre": {
+            "motor": "1.1L Inline-4",
+            "vykon": "70 koní"
+          }
+        },
+        {
+          "znacka": "McLaren",
+          "model": "P1",
+          "rok": 2013,
+          "parametre": {
+            "motor": "3.8L Twin-Turbo V8 Hybrid",
+            "vykon": "916 koní"
+          }
+        },
+        {
+          "znacka": "Triumph",
+          "model": "TR6",
+          "rok": 1969,
+          "parametre": {
+            "motor": "2.5L Inline-6",
+            "vykon": "150 koní"
           }
         }
       ]
