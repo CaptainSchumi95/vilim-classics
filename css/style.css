@@ -401,6 +401,13 @@ h1, h2, h3, h4, h5 {
 .img-col-f1 { background-image: url('../images/7.png'); }
 .img-col-british { background-image: url('../images/6.png'); }
 
+.img-grid-1 { background-image: url('../images/mclaren-f1.png'); }
+.img-grid-2 { background-image: url('../images/senna.png'); }
+.img-grid-3 { background-image: url('../images/kimi.png'); }
+.img-grid-4 { background-image: url('../images/bugatti.png'); }
+.img-grid-5 { background-image: url('../images/lancia-stratos.png'); }
+.img-grid-6 { background-image: url('../images/mercedes 300sl.png'); }
+
 
 .bg-beige {
     background-color: var(--color-bg-beige);
