@@ -172,23 +172,6 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 50px;
 }
 
-.collection-logo-placeholder {
-    height: 120px;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-secondary), serif;
-    font-style: italic;
-    font-size: 24px;
-    text-align: center;
-}
-
-.collection-logo-light { color: #4a7ab5; }
-.collection-logo-accent { color: var(--color-bg-light); }
-.collection-logo-dark { color: var(--color-accent); }
-
 .collection-detail-image {
     background-color: #ccc;
     background-size: cover;
@@ -761,4 +744,21 @@ h1, h2, h3, h4, h5 {
 
 .data-table tr:hover {
     background-color: var(--color-input);
+}
+
+
+.collection-title-image-center {
+    display: block;
+    margin: 0 auto 60px auto;
+    max-height: 120px;
+    width: auto;
+    max-width: 100%;
+}
+
+.collection-title-image-left {
+    display: block;
+    margin: 0 0 40px 0;
+    max-height: 120px;
+    width: auto;
+    max-width: 100%;
 }
