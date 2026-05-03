@@ -727,10 +727,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .img-story-hero {
-    background-image: url('../images/15.jpg');
-    background-position: top center;
+    background-image: url('../images/15.JPG');
+    background-position: center;
 }
-.img-story-bottom { background-image: url('../images/9.JPG'); }
+
+.img-story-bottom {
+    background-image: url('../images/9.JPG');
+    background-position: center 15% !important; /* viem ze nemame pouzivat !important ale uz som nervozny pardon */
+}
 
 
 .data-table {
