@@ -726,7 +726,10 @@ h1, h2, h3, h4, h5 {
     line-height: 1.8;
 }
 
-.img-story-hero { background-image: url('../images/8.png'); }
+.img-story-hero {
+    background-image: url('../images/15.jpg');
+    background-position: top center;
+}
 .img-story-bottom { background-image: url('../images/9.JPG'); }
 
 
