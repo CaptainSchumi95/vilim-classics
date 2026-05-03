@@ -95,6 +95,77 @@
         </div>
         <div class="split-half collection-detail-image img-col-british"></div>
     </section>
+
+    <section class="ajax-data-section bg-beige text-dark" style="padding: 100px 0;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h2 style="font-size: 42px; font-style: italic; margin-bottom: 20px;">Technické špecifikácie</h2>
+                <p style="margin-bottom: 30px;">Zistite viac o výkone a parametroch našej historickej flotily.</p>
+                <button id="load-data-btn" class="btn btn-dark-red">NAČÍTAŤ DÁTA</button>
+            </div>
+
+            <div id="table-container" style="display: none; overflow-x: auto;">
+                <table class="data-table">
+                    <thead>
+                    <tr>
+                        <th>Kolekcia</th>
+                        <th>Značka</th>
+                        <th>Model</th>
+                        <th>Rok výroby</th>
+                        <th>Motor</th>
+                        <th>Výkon</th>
+                    </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('load-data-btn').addEventListener('click', function() {
+            const btn = this;
+            const tableContainer = document.getElementById('table-container');
+            const tableBody = document.getElementById('table-body');
+
+            btn.textContent = "NAČÍTAVAM...";
+
+            fetch('data/data.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Chyba pri načítavaní dát');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    tableBody.innerHTML = '';
+
+                    data.kolekcie.forEach(kolekcia => {
+                        kolekcia.auta.forEach(auto => {
+                            const tr = document.createElement('tr');
+                            tr.innerHTML = `
+                                <td><strong>${kolekcia.nazov}</strong></td>
+                                <td>${auto.znacka}</td>
+                                <td>${auto.model}</td>
+                                <td>${auto.rok}</td>
+                                <td>${auto.parametre.motor}</td>
+                                <td>${auto.parametre.vykon}</td>
+                            `;
+                            tableBody.appendChild(tr);
+                        });
+                    });
+
+                    tableContainer.style.display = 'block';
+                    btn.style.display = 'none';
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    btn.textContent = "CHYBA NAČÍTANIA";
+                    alert("Nepodarilo sa načítať JSON súbor. Ak otvárate súbor iba z plochy (file://), AJAX môže byť blokovaný prehliadačom (CORS). Použite lokálny server (napr. VS Code Live Server alebo Laravel Herd).");
+                });
+        });
+    </script>
 </main>
 
 <footer class="main-footer">

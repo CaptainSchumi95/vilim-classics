@@ -1,0 +1,41 @@
+{
+  "kolekcie": [
+    {
+      "nazov": "American Muscle",
+      "auta": [
+        {
+          "znacka": "Dodge",
+          "model": "Charger R/T",
+          "rok": 1968,
+          "parametre": {
+            "vykon": "425 koní",
+            "motor": "426 Hemi V8"
+          }
+        },
+        {
+          "znacka": "Ford",
+          "model": "Mustang Shelby GT500",
+          "rok": 1967,
+          "parametre": {
+            "vykon": "355 koní",
+            "motor": "428 Cobra Jet V8"
+          }
+        }
+      ]
+    },
+    {
+      "nazov": "Prancing Horse",
+      "auta": [
+        {
+          "znacka": "Ferrari",
+          "model": "330 P4",
+          "rok": 1967,
+          "parametre": {
+            "vykon": "450 koní",
+            "motor": "4.0L V12"
+          }
+        }
+      ]
+    }
+  ]
+}
