@@ -706,3 +706,30 @@ h1, h2, h3, h4, h5 {
 .img-srv-3 { background-image: url('../images/13.png'); }
 .img-srv-4 { background-image: url('../images/9.JPG'); }
 .img-hero-rezervacia { background-image: url('../images/13.png'); }
+
+
+.story-content-section {
+    padding: 120px 0;
+}
+
+.story-content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.story-content-wrapper h2 {
+    font-size: 56px;
+    font-style: italic;
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+.story-content-wrapper p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+/* Obrázky pre Príbeh */
+.img-story-hero { background-image: url('../images/8.png'); }
+.img-story-bottom { background-image: url('../images/9.JPG'); }
