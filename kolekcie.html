@@ -131,10 +131,10 @@
 
             btn.textContent = "NAČÍTAVAM...";
 
-            fetch('data/data.json')
+            fetch('/auta.json')
                 .then(response => {
                     if (!response.ok) {
-                        throw new Error('Chyba pri načítavaní dát');
+                        throw new Error(`HTTP chyba! Status: ${response.status}`);
                     }
                     return response.json();
                 })
@@ -145,13 +145,13 @@
                         kolekcia.auta.forEach(auto => {
                             const tr = document.createElement('tr');
                             tr.innerHTML = `
-                                <td><strong>${kolekcia.nazov}</strong></td>
-                                <td>${auto.znacka}</td>
-                                <td>${auto.model}</td>
-                                <td>${auto.rok}</td>
-                                <td>${auto.parametre.motor}</td>
-                                <td>${auto.parametre.vykon}</td>
-                            `;
+                            <td><strong>${kolekcia.nazov}</strong></td>
+                            <td>${auto.znacka}</td>
+                            <td>${auto.model}</td>
+                            <td>${auto.rok}</td>
+                            <td>${auto.parametre.motor}</td>
+                            <td>${auto.parametre.vykon}</td>
+                        `;
                             tableBody.appendChild(tr);
                         });
                     });
@@ -160,9 +160,9 @@
                     btn.style.display = 'none';
                 })
                 .catch(error => {
-                    console.error('Error:', error);
+                    console.error('AJAX Error:', error);
                     btn.textContent = "CHYBA NAČÍTANIA";
-                    alert("Nepodarilo sa načítať JSON súbor. Ak otvárate súbor iba z plochy (file://), AJAX môže byť blokovaný prehliadačom (CORS). Použite lokálny server (napr. VS Code Live Server alebo Laravel Herd).");
+                    alert("Nepodarilo sa načítať JSON súbor. Pozrite si konzolu (F12) pre presný dôvod chyby.");
                 });
         });
     </script>
