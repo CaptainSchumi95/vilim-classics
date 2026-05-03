@@ -746,19 +746,18 @@ h1, h2, h3, h4, h5 {
     background-color: var(--color-input);
 }
 
-
 .collection-title-image-center {
     display: block;
     margin: 0 auto 60px auto;
-    max-height: 120px;
-    width: auto;
-    max-width: 100%;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
 }
 
 .collection-title-image-left {
     display: block;
     margin: 0 0 40px 0;
-    max-height: 120px;
-    width: auto;
-    max-width: 100%;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
