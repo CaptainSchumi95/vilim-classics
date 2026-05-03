@@ -393,7 +393,13 @@ h1, h2, h3, h4, h5 {
 
 .img-hero-index { background-image: url('../images/1.png'); }
 .img-story-index { background-image: url('../images/8.png'); }
-.img-service-placeholder { background-image: url('../images/3.png'); }
+
+.img-service-1 { background-image: url('../images/prenajom_vozidla.png'); }
+.img-service-2 { background-image: url('../images/svadba.png'); }
+.img-service-3 { background-image: url('../images/film_foto.png'); }
+.img-service-4 { background-image: url('../images/zazitkove.png'); }
+.img-service-5 { background-image: url('../images/firemne_akcie.png'); }
+.img-service-6 { background-image: url('../images/darcekove.png'); }
 
 .img-hero-kolekcie { background-image: url('../images/2.png'); }
 .img-col-american { background-image: url('../images/5.png'); }
